@@ -6,7 +6,6 @@ class InterestsController < ApplicationController
     @interest.user_id = current_user.id
     if @interest.valid?
       @interest.save
-
       redirect_to root_path
     else
       redirect_to root_path, alert: "Ooops"
@@ -15,9 +14,8 @@ class InterestsController < ApplicationController
 
   private
 
-#Never trust parameters
+  #Never trust parameters
   def interest_params
     params.require(:interest).permit(:level, :comment, :topic_id)
   end
-end
 end

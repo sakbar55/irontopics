@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
+  
   resources :topics
-  resources :topics
-  resources :scaffolds, except: [:destroy]
-  root "topics#index"
 
+  resources :interests, only: [:create]
+
+  root "topics#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

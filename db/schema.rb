@@ -20,15 +20,6 @@ ActiveRecord::Schema.define(version: 20151013060003) do
     t.integer "topic_id"
   end
 
-  create_table "scaffolds", force: :cascade do |t|
-    t.string   "topic"
-    t.string   "title"
-    t.text     "long_description"
-    t.string   "focus_area"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
-
   create_table "topics", force: :cascade do |t|
     t.string   "title"
     t.text     "long_description"
