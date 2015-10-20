@@ -1,10 +1,12 @@
 class CreateInterests < ActiveRecord::Migration
   def change
-    create_table :interests do |t|
-      t.integer :user_id
-      t.text :comment
-      t.integer :level
-      t.integer :topic_id
-    end
-  end
-end
+     create_table :interests do |t|
+       t.references :user, index: true, foreign_key: true
+       t.text :comment
+       t.integer :level
+       t.references :topic, index: true, foreign_key: true
+
+       t.timestamps null: false
+     end
+   end
+ end
