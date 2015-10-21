@@ -1,9 +1,10 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #FFFFE6;
+  color: #A32900;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+
 }
 
 p, ol, ul, td {
@@ -13,13 +14,15 @@ p, ol, ul, td {
 }
 
 pre {
-  background-color: #eee;
+  background-color: #FFFFE6;
   padding: 10px;
   font-size: 11px;
 }
 
 a {
   color: #000;
+  font-weight: bolder;
+  font-style: italic;
 
   &:visited {
     color: #666;
@@ -38,7 +41,7 @@ div {
 }
 
 #notice {
-  color: green;
+  color: #FF6666;
 }
 
 .field_with_errors {
@@ -58,12 +61,13 @@ div {
   h2 {
     text-align: left;
     font-weight: bold;
+    font-stretch: extra-expanded;
     padding: 5px 5px 5px 15px;
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
     background-color: #c00;
-    color: #fff;
+    color: #FF6666;
   }
 
   ul li {

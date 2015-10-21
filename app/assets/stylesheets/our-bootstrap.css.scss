@@ -1,0 +1,12 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+a.btn, a.btn:visited {
+  color: white;
+}
+
+#title {
+  margin-left: 20px;
+}
